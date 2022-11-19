@@ -12,5 +12,9 @@ public class Hello {
 	public String sayHello() {
 		return "What are you learning today?";
 	}
+	@RequestMapping("/say-hello-jsp")
+	public String sayHelloJsp() {
+		return "sayHello";
+	}
 
 }
