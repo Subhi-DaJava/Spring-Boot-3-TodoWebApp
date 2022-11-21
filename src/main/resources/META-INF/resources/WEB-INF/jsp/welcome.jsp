@@ -5,8 +5,10 @@
 <title>welcome page</title>
 </head>
 <body>
-	<div><h3>${name}, Welcome to Uyghur Java Page</h3></div>
-	<div>Your Name: ${name} <span style="color: red; font-size: 1.3rem">, this "name"" comes form page of Login</span></div>
-	<div><a href="list-todos">Manage</a> your todos</div>
+	<div class="container">
+	<h1 style="color: blue; font-size: 1.3rem">${name}, Welcome to Uyghur Java Page</h1>
+	<hr>
+	<a href="list-todos">Manage</a> your todos
+	</div>
 </body>
 </html>

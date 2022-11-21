@@ -5,14 +5,15 @@
 <title>login page</title>
 </head>
 <body>
-<h2>Welcome to login page!</h2>	
-<pre>${errorMessage}</pre>
-<div>
-	<form method="post">
-		Name: <input type="text" name="name">
-		Password: <input type="password" name="password">
-		<input type="submit">
-	</form>
-</div>
+	<div class="container">
+		<h2>Welcome to login page!</h2>
+		<hr>
+		<h1>Login</h1>
+		<pre style="color: red; font-weight: bold; font-size: 1.3rem">${errorMessage}</pre>
+		<form method="post">
+			Name: <input type="text" name="name"> Password: <input
+				type="password" name="password"> <input type="submit">
+		</form>
+	</div>
 </body>
 </html>
