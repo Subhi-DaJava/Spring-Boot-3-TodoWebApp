@@ -8,10 +8,12 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.uyghur.springboot.webapp.service.AuthenticationService;
 
 @Controller
+@SessionAttributes("name")
 public class LoginController {
 	@Autowired
 	private AuthenticationService authenticationService; 
@@ -30,7 +32,7 @@ public class LoginController {
 			ModelMap model) {
 		if(authenticationService.authenticate(name, password)) {
 			model.put("name", name);
-			model.put("password", password);
+			//model.put("password", password);
 			
 			logger.info("Post request");
 			return "welcome";
