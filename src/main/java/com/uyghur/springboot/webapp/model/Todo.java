@@ -2,11 +2,14 @@ package com.uyghur.springboot.webapp.model;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Size;
+
 // Static List of todos => Database H2 and MySQL
 public class Todo {
 	
 	private int id;
 	private String username;
+	@Size(min=10, message="Enter at least 10 characters!")
 	private String description;
 	private LocalDate targetDate;
 	private boolean done;
