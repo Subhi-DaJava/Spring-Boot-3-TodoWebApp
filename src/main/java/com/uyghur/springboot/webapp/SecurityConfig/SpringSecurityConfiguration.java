@@ -12,6 +12,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @Configuration
 public class SpringSecurityConfiguration {
+
 	// InMemoryUserDetailsManager
 	// InMemoryUserDetailManager(UserDetails...users)
 
@@ -35,7 +36,7 @@ public class SpringSecurityConfiguration {
 				.build();
 		return userDetails;
 	}
-
+	
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
