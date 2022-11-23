@@ -1,7 +1,7 @@
 <%@ include file="common/header.jspf" %>
 <%@ include file="common/navigation.jspf" %>
 	<div class="container">
-		<h3>${name}, Welcometo Uyghur Java!</h3>
+		<h3>Welcome to Uyghur Java !</h3>
 		<hr>
 		<h1>Your todos are</h1>
 		<table class="table">

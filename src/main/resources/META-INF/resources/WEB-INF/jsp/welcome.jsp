@@ -1,7 +1,7 @@
 <%@ include file="common/header.jspf"%>
 <%@ include file="common/navigation.jspf"%>
 	<div class="container">
-		<h1 style="color: blue; font-size: 1.3rem">${name},Welcometo
+		<h1 style="color: blue; font-size: 1.3rem">${name}, Welcometo
 			Uyghur Java Page</h1>
 		<hr>
 		<a href="list-todos">Manage</a> your todos
