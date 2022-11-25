@@ -18,9 +18,14 @@
 		</fieldset>
 
 		<form:input type="hidden" path="id" />
-
-		<form:input type="hidden" path="done" />
-
+		
+		<fieldset class="mb-3">
+		<label>Is Done ?</label>
+		<input type="radio" path="done" value="false" name="done" checked/> False
+		<input type="radio" path="done" value="true" name="done">  True
+		<form:errors path="done" cssClass="text-warning" />
+		</fieldset>
+		
 		<button type="submit" class="btn btn-success">Submit</button>
 	</form:form>
 </div>
