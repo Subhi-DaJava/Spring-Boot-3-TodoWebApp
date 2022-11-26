@@ -78,6 +78,7 @@ public class TodoJPAController {
 			ModelMap model, @RequestParam int id) throws TodoNotFoundException {
 		Todo todo = todoRepository.findById(id).
 				orElseThrow(() -> new TodoNotFoundException("Todo with this id: " + id + " not found in DB!"));
+		
 		model.addAttribute("todo", todo);
 		return "todo";
 	}
@@ -90,7 +91,7 @@ public class TodoJPAController {
 		if(result.hasErrors()) {
 			return "todo";
 		}
-		String username = (String)model.get("name");
+		String username = getLoggedinUsername(model);
 		todo.setUsername(username);
 		
 		todoRepository.save(todo);
